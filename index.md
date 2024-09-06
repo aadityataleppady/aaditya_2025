@@ -1,12 +1,17 @@
 ---
 layout: base
-title: Student Home 
+title: Home Page 
 description: Home Page
 image: /images/mario_animation.png
 hide: true
 ---
 
 Welcome To My Page!
+
+
+
+<!-- Mario Code under here -->
+
 
 
 <!-- Liquid:  statements -->
@@ -190,5 +195,33 @@ Welcome To My Page!
     sprite.style.transform = `scale(${0.2 * scale})`;
     mario.startResting();
   });
+
+</script>
+
+
+<a href="my_journey" style="background-color: #000000; color: white; padding: 14px 28px; font-size: 16px; cursor: pointer; text-align: center; border-radius: 15% position: absolute; bottom: 10%; right: 10%;">
+    <button type="button">Click here to go to my journey!</button>
+</a>
+
+<script>
+
+const myselfObject = {
+    name: "Aaditya Taleppady",
+    age: 15,
+    currentClasses: ["3D Animation 2", "AP Calculus", "AP Chemistry", "AP English Seminar", "AP Computer Science Principles"],
+    interests: ["Coding", "Football", "Basketball"],
+    extracurricularActivities: ["CyberAegis", "Basketball"],
+    favoriteFood: ["Pasta"]
+};
+
+console.log(myselfObject);
+
+myselfObject.interests[0] = "Watching youtube";
+
+console.log("This is my object after manipulating my interests array:", myselfObject);
+console.log(myselfObject.age - 7, "is my age subtracted by 7")
+console.log("The type of data of my age in my object is",typeof myselfObject.age);
+console.log("The type of data of my name in my object is",typeof myselfObject.name);
+console.log("The type of data of my interests in my object is",typeof myselfObject.interests);
 
 </script>

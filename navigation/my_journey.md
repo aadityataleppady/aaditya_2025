@@ -27,16 +27,44 @@ Easy Steps:
  
 - Opening a Project and "Make"
 
-    - After creating
+    - After creating my git username and email, I entered my student directory, and activated the virtual environment by running: `source venv/bin/activate`
+    - Then, I opened VSCode by running: `code .`
+    - After openeing VSCode, I could view all my files and edit all the markdown files to edit my website.
+    - I opened a VSCode terminal and ran: `make` to create a local server. I ran this command every time I made changes and wanted to view them on my website.
 
 Difficult Steps:
 
 - Installing Developer Tools
+
+    - In order to install my developer tools, I had to run all these commands (Note: I did this before some of the steps above):
+    - `cd`
+    - `mkdir nighthawk`
+    - `cd nighthawk` 
+    - `git clone https://github.com/nighthawkcoders/portfolio_2025.git`
+    - Then, I ran these commands in WSL to install the tools.
+    - `cd`
+    - `cd nighthawk/portfolio_2025/scripts`
+    - `./activate_ubuntu.sh`
+    - This step was difficult because I had to delete and re-download everything in order for it to work properly. Also, the installation process took around 5-10 minutes to finish.
+
 - Starting a Project
-- VS Code Commit and Sync Workflow
+
+    - In order to start my project, I had to run these commands in order to setup a directory for my project and prepare the project
+
+        - `cd`
+        - `mkdir -p nighthawk`
+        - `cd nighthawk`
+        - `git clone https://github.com/nighthawkcoders/student_2025.git`
+        - `cd student_2025`
+        - `scripts/venv.sh`
+        - `source venv/bin/activate`
+        - `pip install -r requirements.txt`
+        - `jupyter kernelspec list`
+        - `bundle install`
+        - `code .`
+
+    - Then, I had to authenticate with GitHub.
+    - This step was difficult because it took many attempts to install bundle and the `pip install -r requirements.txt` command didn't work for me the first time.
 
 
-
-In the end, these are all the tools we installed:
-
-Overall, my journey ....
+In the end, I was able to install all the tools and get the GitHub working and synced to my website and VSCode!
