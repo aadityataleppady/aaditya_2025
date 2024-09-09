@@ -6,7 +6,15 @@ image: /images/mario_animation.png
 hide: true
 ---
 
-Welcome To My Page!
+<style>
+  #heading {
+    text-align: center;
+    font-weight: 500;
+  }
+</style>
+
+
+<h1 id="heading">Welcome To My Page!</h1>
 
 
 
@@ -199,11 +207,86 @@ Welcome To My Page!
 </script>
 
 
-<a href="my_journey" style="background-color: #000000; color: white; padding: 14px 28px; font-size: 16px; cursor: pointer; text-align: center; border-radius: 15% position: absolute; bottom: 10%; right: 10%;">
-    <button type="button">Click here to go to my journey!</button>
+<style>
+  #myJourneyButton {
+    text-align: center;
+    font-weight: 500;
+  }
+</style>
+
+<style>
+  #myJourneyButtonCase {
+    text-align: center;
+    font-weight: 500;
+  }
+</style>
+
+
+<a id="myJourneyButtonCase" href="my_journey" style="background-color: #000000; color: white; padding: 14px 28px; font-size: 16px; cursor: pointer; text-align: center; border-radius: 15% position: absolute; bottom: 10%; right: 10%;">
+    <button id="myJourneyButton" type="button">Click here to go to my journey!</button>
 </a>
 
+
+<!--This is the code for the HTML hacks -->
+
+<style>
+  #htmlHacksp1 {
+    text-align: center;
+    font-weight: 500;
+  }
+</style>
+
+
+
+<div id="htmlHacksp1">
+<p>
+In the NBA, there are 30 teams. There are two confrences, the Eastern and Western Confrence. Along with that, there are also 3 divisions per confrenece. In the eastern confrence, the divisions are: Atlantic, Central, and Southeast. In the western confrence, the divisions are: Northwest, Pacific, and Southwest. Click this button to choose a team from the NBA!
+</p>
+
+<button id="randomTeamButton">Click here to get a random NBA team!</button>
+
+<p id="teamOutput"></p>
+</div>
+
+
+<div id="htmlHacksp2">
+<a id="link1" href="https://www.nba.com/teams">NBA Teams & Rosters!</a><br>
+<a id="link2" href="https://www.espn.com/nba/story/_/id/40337422/nba-power-rankings-way-too-early-edition-our-post-finals-look-all-30-teams-2024-25">NBA Power Rankings for 2024-2025 season!</a>
+
+<p>The first link takes you to all the NBA Teams and their rosters for the 2024-2025 season. The second link takes you to the power rankings for the 2024-2025 NBA season. Power rankings rank all the teams for the next season based on their new rosters. Power rankings are not always accurate due to in-season injuries, trades, and unexpected rises and dips in players' performances.
+</p>
+</div>
+
+
 <script>
+        // Array of NBA teams
+        const nbaTeams = [
+            "Atlanta Hawks", "Boston Celtics", "Brooklyn Nets", "Charlotte Hornets", 
+            "Chicago Bulls", "Cleveland Cavaliers", "Dallas Mavericks", "Denver Nuggets", 
+            "Detroit Pistons", "Golden State Warriors", "Houston Rockets", "Indiana Pacers", 
+            "LA Clippers", "Los Angeles Lakers", "Memphis Grizzlies", "Miami Heat", 
+            "Milwaukee Bucks", "Minnesota Timberwolves", "New Orleans Pelicans", "New York Knicks", 
+            "Oklahoma City Thunder", "Orlando Magic", "Philadelphia 76ers", "Phoenix Suns", 
+            "Portland Trail Blazers", "Sacramento Kings", "San Antonio Spurs", "Toronto Raptors", 
+            "Utah Jazz", "Washington Wizards"
+        ];
+
+        // Function to get a random NBA team
+        function getRandomTeam() {
+            const randomIndex = Math.floor(Math.random() * nbaTeams.length);
+            return nbaTeams[randomIndex];
+        }
+
+        // Event listener for button click
+        document.getElementById("randomTeamButton").addEventListener("click", function() {
+            const randomTeam = getRandomTeam();
+            document.getElementById("teamOutput").textContent = randomTeam;
+        });
+    </script>
+
+
+<script>
+
 
 const myselfObject = {
     name: "Aaditya Taleppady",
@@ -223,5 +306,82 @@ console.log(myselfObject.age - 7, "is my age subtracted by 7")
 console.log("The type of data of my age in my object is",typeof myselfObject.age);
 console.log("The type of data of my name in my object is",typeof myselfObject.name);
 console.log("The type of data of my interests in my object is",typeof myselfObject.interests);
+
+</script>
+
+
+<head>
+  <link rel="stylesheet" href="/student/assets/css/style.css">
+</head>
+
+
+<style>
+  #paragraph {
+    text-align: center;
+    font-weight: 500;
+  }
+</style>
+  
+  
+  <div id="paragraph">
+      <p id="text">The links are not switched.</p>
+      <button class="button" onclick="switchText()">Click Me!!!</button>
+  </div>
+
+
+<script id="paragraph_text">
+  function switchText() {
+    
+    let displayText = document.getElementById("text");
+    
+    let displayLink1 = document.getElementById("link1").href;
+    let displayLink2 = document.getElementById("link2").href;
+
+    let currentText = displayText.innerHTML;
+
+    if (currentText === "The links are not switched.") {
+      displayText.innerHTML = "Switched!";
+      document.getElementById('link1').href = displayLink2;
+      document.getElementById('link2').href = displayLink1;
+      
+    } else {
+      displayText.innerHTML = "The links are not switched.";
+    }
+  }
+</script>
+
+
+
+<!-- These are the JavaScript Hacks-->
+
+<script>
+
+let a = 15;
+let b = 20;
+
+if (a > b) {
+    console.log("a is greater");
+} else if (b > a) {
+    console.log("b is greater");
+} else {
+    console.log("both are equal");
+}
+
+
+
+let x = 10;
+let y = 5;
+
+// Perform operations
+let addition = x + y;
+let subtraction = x - y;
+let multiplication = x * y;
+let division = x / y;
+
+// Print results to the console
+console.log("Addition: " + addition);         // Output: Addition: 15
+console.log("Subtraction: " + subtraction);   // Output: Subtraction: 5
+console.log("Multiplication: " + multiplication); // Output: Multiplication: 50
+console.log("Division: " + division);         // Output: Division: 2
 
 </script>
