@@ -37,7 +37,7 @@ if (localStorage.getItem("breached") == null) {
       localStorage.setItem("count", "9999999999");
       document.getElementById("cookieCount").innerText = "9999999999";
       const img = document.getElementById("cookie");
-      img.src = "../images/evilCookie.png";
+      img.src = "../images/cookie.png";
       localStorage.setItem("breached", "1");
     } else {
       var scream = new Audio("../assets/audio/scream.mp3");

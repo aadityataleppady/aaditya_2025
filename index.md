@@ -16,6 +16,8 @@ hide: true
 
 <h1 id="heading">Welcome To My Page!</h1>
 
+<br>
+
 
 
 <!-- Mario Code under here -->
@@ -209,6 +211,9 @@ hide: true
 
 <style>
   #myJourneyButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     font-weight: 500;
   }
@@ -218,13 +223,17 @@ hide: true
   #myJourneyButtonCase {
     text-align: center;
     font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 </style>
 
 
-<a id="myJourneyButtonCase" href="my_journey" style="background-color: #000000; color: white; padding: 14px 28px; font-size: 16px; cursor: pointer; text-align: center; border-radius: 15% position: absolute; bottom: 10%; right: 10%;">
+<a id="myJourneyButtonCase" href="my_journey">
     <button id="myJourneyButton" type="button">Click here to go to my journey!</button>
 </a>
+
 
 
 <!--This is the code for the HTML hacks -->
@@ -235,7 +244,6 @@ hide: true
     font-weight: 500;
   }
 </style>
-
 
 
 <div id="htmlHacksp1">
