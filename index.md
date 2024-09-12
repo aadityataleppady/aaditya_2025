@@ -1,7 +1,7 @@
 ---
 layout: base
-title: Home Page 
-description: Home Page
+title: Aaditya's Website 
+description: Aaditya's Website
 image: /images/mario_animation.png
 hide: true
 ---
@@ -230,16 +230,63 @@ hide: true
 </style>
 
 
-<a id="myJourneyButtonCase" href="my_journey">
-    <button id="myJourneyButton" type="button">Click here to go to my journey!</button>
+<div id="myJourneyButtonDiv">
+<a id="myJourneyButtonCase" target="_blank" href="my_journey">
+    Click here to go to My Journey!
 </a>
+</div>
+
+<style>
+
+#myJourneyButtonDiv {
+    text-align: center;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#myJourneyButtonCase {
+    background-color: #89CFF0;  /* Blue */
+    border: 2px solid #5F9EA0;  /* Darker Blue */
+    color: white;  /* White text */
+    padding: 12px 24px;  /* Padding for the button */
+    text-decoration: none;  /* Remove underline from link */
+    font-family: 'Verdana', sans-serif;  /* Better font */
+    font-size: 16px;  /* Font size */
+    border-radius: 25px;  /* Rounded button */
+    cursor: pointer;  /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, border-color 0.3s ease;  /* Smooth transition */
+    display: inline-block;  /* Makes the button size depend on the content */
+}
+
+#myJourneyButtonCase:hover {
+    background-color: #5F9EA0;  /* Darker bluer */
+    border-color: #F0FFFF;  /* Light blue */
+}
+
+</style>
+
+
+<p id="coolStuff">There are some cool stuff under here!!</p>
+
 
 
 
 <!--This is the code for the HTML hacks -->
 
 <style>
+  #coolStuff{
+    text-align: center;
+    font-weight: 500;
+
+  }
   #htmlHacksp1 {
+    text-align: center;
+    font-weight: 500;
+  }
+  #htmlHacksp2 {
     text-align: center;
     font-weight: 500;
   }
@@ -252,6 +299,7 @@ In the NBA, there are 30 teams. There are two confrences, the Eastern and Wester
 </p>
 
 <button id="randomTeamButton">Click here to get a random NBA team!</button>
+
 
 <p id="teamOutput"></p>
 </div>
@@ -293,29 +341,8 @@ In the NBA, there are 30 teams. There are two confrences, the Eastern and Wester
     </script>
 
 
-<script>
 
 
-const myselfObject = {
-    name: "Aaditya Taleppady",
-    age: 15,
-    currentClasses: ["3D Animation 2", "AP Calculus", "AP Chemistry", "AP English Seminar", "AP Computer Science Principles"],
-    interests: ["Coding", "Football", "Basketball"],
-    extracurricularActivities: ["CyberAegis", "Basketball"],
-    favoriteFood: ["Pasta"]
-};
-
-console.log(myselfObject);
-
-myselfObject.interests[0] = "Watching youtube";
-
-console.log("This is my object after manipulating my interests array:", myselfObject);
-console.log(myselfObject.age - 7, "is my age subtracted by 7")
-console.log("The type of data of my age in my object is",typeof myselfObject.age);
-console.log("The type of data of my name in my object is",typeof myselfObject.name);
-console.log("The type of data of my interests in my object is",typeof myselfObject.interests);
-
-</script>
 
 
 <head>
@@ -324,6 +351,24 @@ console.log("The type of data of my interests in my object is",typeof myselfObje
 
 
 <style>
+  #randomTeamButton {
+    background-color: #89CFF0;  /* Blue */
+    border: 2px solid #5F9EA0;  /* Darker Blue */
+    color: white;  /* White text */
+    padding: 12px 24px;  /* Padding for the button */
+    text-decoration: none;  /* Remove underline from link */
+    font-family: 'Verdana', sans-serif;  /* Better font */
+    font-size: 16px;  /* Font size */
+    border-radius: 25px;  /* Rounded button */
+    cursor: pointer;  /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, border-color 0.3s ease;  /* Smooth transition */
+    display: inline-block;  /* Makes the button size depend on the content */
+  }
+
+  #randomTeamButton:hover {
+      background-color: #5F9EA0;  /* Darker bluer */
+      border-color: #F0FFFF;  /* Light blue */
+  }
   #paragraph {
     text-align: center;
     font-weight: 500;
@@ -333,7 +378,7 @@ console.log("The type of data of my interests in my object is",typeof myselfObje
   
   <div id="paragraph">
       <p id="text">The links are not switched.</p>
-      <button class="button" onclick="switchText()">Click Me!!!</button>
+      <a id="switchLinkButton" onclick="switchText()" target="_blank">Click Me!!!</a>
   </div>
 
 
@@ -359,37 +404,64 @@ console.log("The type of data of my interests in my object is",typeof myselfObje
 </script>
 
 
+<!-- Creating a space between the links button and the spotify button-->
+<br>
 
-<!-- These are the JavaScript Hacks-->
+<div id="spotify_button">
 
-<script>
+<a href="https://open.spotify.com/album/3zuiRKPaFalv72BcNJ47Ih?si=vY_ANhkaT_ufmHKg1wXuQw" target="_blank" class="spotify-button">
+    Click here to listen to the most popular songs of the decade!
+</a>
 
-let a = 15;
-let b = 20;
+</div>
 
-if (a > b) {
-    console.log("a is greater");
-} else if (b > a) {
-    console.log("b is greater");
-} else {
-    console.log("both are equal");
+<style>
+
+#switchLinkButton {
+    background-color: #89CFF0;  /* Blue */
+    border: 2px solid #5F9EA0;  /* Darker Blue */
+    color: white;  /* White text */
+    padding: 12px 24px;  /* Padding for the button */
+    text-decoration: none;  /* Remove underline from link */
+    font-family: 'Verdana', sans-serif;  /* Better font */
+    font-size: 16px;  /* Font size */
+    border-radius: 25px;  /* Rounded button */
+    cursor: pointer;  /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, border-color 0.3s ease;  /* Smooth transition */
+    display: inline-block;  /* Makes the button size depend on the content */
+  }
+
+  #switchLinkButton:hover {
+      background-color: #5F9EA0;  /* Darker bluer */
+      border-color: #F0FFFF;  /* Light blue */
+  }
+
+
+#spotify_button {
+  text-align: center;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.spotify-button {
+    background-color: #1DB954;  /* Spotify green */
+    border: 2px solid #1a9a46;  /* Darker green border */
+    color: white;  /* White text */
+    padding: 12px 24px;  /* Padding for the button */
+    text-decoration: none;  /* Remove underline from link */
+    font-family: 'Verdana', sans-serif;  /* Better font */
+    font-size: 16px;  /* Font size */
+    border-radius: 25px;  /* Rounded button */
+    cursor: pointer;  /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, border-color 0.3s ease;  /* Smooth transition */
+    display: inline-block;  /* Makes the button size depend on the content */
+}
 
+.spotify-button:hover {
+    background-color: #14833b;  /* Darker green background on hover */
+    border-color: #117230;  /* Even darker green border on hover */
+}
 
-let x = 10;
-let y = 5;
-
-// Perform operations
-let addition = x + y;
-let subtraction = x - y;
-let multiplication = x * y;
-let division = x / y;
-
-// Print results to the console
-console.log("Addition: " + addition);         // Output: Addition: 15
-console.log("Subtraction: " + subtraction);   // Output: Subtraction: 5
-console.log("Multiplication: " + multiplication); // Output: Multiplication: 50
-console.log("Division: " + division);         // Output: Division: 2
-
-</script>
+</stlye>

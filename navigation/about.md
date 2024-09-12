@@ -6,6 +6,8 @@ permalink: /about/
 
 Hello, my name is Aaditya Taleppady.
 
+<img src="../images/full_picture.png">
+
 I was born in San Diego, California. I am 15 years old, and am a 10th grader at Del Norte High School. My favorite subject in school is AP Calculus and AP Computer Science Principles. Some of my hobbies include coding, cooking, reading, and playing sports such as basketball and football.
 
 Basketball:
