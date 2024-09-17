@@ -24,3 +24,6 @@ header_pages:
   - navigation/about.md
   - navigation/my_journey.md
   - navigation/cookie.md
+  - navigation/Spotify.md
+  - navigation/calculator.md
+  - navigation/snake_game.md
