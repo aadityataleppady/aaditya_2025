@@ -390,12 +390,17 @@ In the NBA, there are 30 teams. There are two confrences, the Eastern and Wester
     let displayLink1 = document.getElementById("link1").href;
     let displayLink2 = document.getElementById("link2").href;
 
+    let tempText1 = document.getElementById('link1').textContent;
+    let temptext2 = document.getElementById('link2').textContent;
+
     let currentText = displayText.innerHTML;
 
     if (currentText === "The links are not switched.") {
       displayText.innerHTML = "Switched!";
       document.getElementById('link1').href = displayLink2;
+      document.getElementById('link1').textContent = document.getElementById('link2').textContent;
       document.getElementById('link2').href = displayLink1;
+      document.getElementById('link2').textContent = tempText1;
       
     } else {
       displayText.innerHTML = "The links are not switched.";

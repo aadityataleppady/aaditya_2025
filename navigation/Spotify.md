@@ -1,27 +1,64 @@
 ---
 layout: page
-title: Spotify
+title: Spotify 
 permalink: /spotify/
 ---
 
-Welcome to the Spotify page!
+<h1>Welcome to the Spotify page!</h1>
 
-This page has many buttons and cool features related to Spotify!
 
 <br>
 
 <div id="spotify_button">
 
 <a href="https://open.spotify.com/album/3zuiRKPaFalv72BcNJ47Ih?si=vY_ANhkaT_ufmHKg1wXuQw" target="_blank" class="spotify-button">
-    Click here to listen to the most popular songs of the decade!
+    Click here to listen to the most popular songs of the 10s!
 </a>
+
+<br>
+
+<a href="https://open.spotify.com/album/0JJnEQIUKUKIzFolsQ5B7Q?si=eoz2rmVsSj6V-MlMEDRpvw" target="_blank" class="spotify-button">
+    Click here to listen to the most popular songs of the 00s!
+</a>
+
+<br>
+
+<a href="https://open.spotify.com/album/6odcotWv2xd7NP7RrGBS5b?si=DId95O9ITV2r_Ww73ze25Q" target="_blank" class="spotify-button">
+    Click here to listen to the most popular songs of the 90s!
+</a>
+
+<br>
+
+<a href="https://open.spotify.com/album/3C20zCOVCXIb9xr0Z6wcCG?si=TdIFOxHOQHGG7qeyd-rABQ" target="_blank" class="spotify-button">
+    Click here to listen to the most popular songs of the 80s!
+</a>
+
+<br>
+
+<a href="https://open.spotify.com/album/1k7WkNHGPNPnri2tsowvtg?si=N-uRuetbRsG_lgxCPrrf2g" target="_blank" class="spotify-button">
+    Click here to listen to the most popular songs of the 70s!
+</a>
+
 
 </div>
 
 
 <style>
 
+#h1 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    color: #1DB954;
+
+}
+
 #spotify_button {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
   text-align: center;
   font-weight: 500;
   display: flex;
