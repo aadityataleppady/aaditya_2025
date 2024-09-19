@@ -40,8 +40,8 @@ if (localStorage.getItem("breached") == null) {
       img.src = "../images/cookie.png";
       localStorage.setItem("breached", "1");
     } else {
-      var scream = new Audio("../assets/audio/scream.mp3");
-      scream.play();
+      var cookieAudio = new Audio("../assets/audio/mixkit-creepy-little-creature-2873.wav");
+      cookieAudio.play();
       localStorage.setItem(
         "count",
         (parseInt(localStorage.getItem("count")) + 1).toString()

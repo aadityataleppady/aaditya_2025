@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+comments: True
 ---
 
 Hello, my name is Aaditya Taleppady.
@@ -202,4 +203,12 @@ These pictures represent my hobbies and interests:
         slideIndex = n - 1;
         showSlides();
     }
+</script>
+
+<script src="https://utteranc.es/client.js"
+        repo="aadityataleppady/aaditya_2025"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
 </script>

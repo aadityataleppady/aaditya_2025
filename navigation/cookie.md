@@ -7,7 +7,7 @@ permalink: /cookie-clicker/
 
 <div id="cookieClicker">
 
-<p>Please do not <span class="bake" onclick="bake()">bake</span> any more than 50 cookies. A cookie virus will be installed if you do. 🍪</p>
+<p>Welcome to my Cookie Clicker! Click the cookie to <span class="bake" onclick="bake()">bake</span> some cookies! 🍪</p>
 
 <img id="cookie" class="cookie" src="../images/funnycookie.jpg" onclick="increaseCount()">
 
