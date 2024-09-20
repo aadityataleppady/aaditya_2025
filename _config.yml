@@ -3,7 +3,7 @@ description: "Class of 2025"
 owner_name: John Mortensen
 github_username: nighthawkcoders
 github_repo: "aaditya_2025" 
-baseurl: ""
+baseurl: "/aaditya_2025"
 future: true
 remote_theme: jekyll/minima
 minima:
@@ -32,3 +32,4 @@ header_pages:
   - navigation/calculator.md
   - navigation/snake_game.md
   - README4YML.md
+
