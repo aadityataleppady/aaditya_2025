@@ -63,6 +63,7 @@ comments: True
   }
 
   #searchTerm {
+    background-color: #89CFF0;  /* Blue */
     border: 2px solid #5F9EA0;  /* Darker Blue */
     color: white;  /* White text */
     padding: 12px 24px;  /* Padding for the button */
@@ -73,6 +74,11 @@ comments: True
     cursor: pointer;  /* Pointer cursor on hover */
     transition: background-color 0.3s ease, border-color 0.3s ease;  /* Smooth transition */
     display: inline-block;  /* Makes the button size depend on the content */
+  }
+
+  #searchTerm:hover {
+      background-color: #5F9EA0;  /* Darker bluer */
+      border-color: #F0FFFF;  /* Light blue */
   }
 
 </style>
