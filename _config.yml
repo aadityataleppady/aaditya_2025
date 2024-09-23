@@ -27,5 +27,6 @@ header_pages:
   - navigation/Spotify.md
   - navigation/calculator.md
   - navigation/snake_game.md
+  - navigation/iTunesAPI.md
   - README4YML.md
 
