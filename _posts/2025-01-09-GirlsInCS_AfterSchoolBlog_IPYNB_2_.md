@@ -1,7 +1,7 @@
 ---
 layout: post
 title: College Student Panel - After School
-description: Some fun facts about me
+description: After School Blog
 permalink: /posts/GirlsInCs_AfterSchool
 comments: True
 ---
