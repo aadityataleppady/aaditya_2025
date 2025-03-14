@@ -8,6 +8,8 @@ comments: True
 
 I took the 2020 Practice Exam 1 MCQ in Collegeboard and got a 60/67. Here are all the questions I got wrong:
 
+<img src="../images/mcq_time.png">
+<img src="../images/mcq_topics.png">
 <h2>Question 11</h2>
 <h3>A color in a computing application is represented by an RGB triplet that describes the amount of red, green, and blue, respectively, used to create the desired color. A selection of colors and their corresponding RGB triplets are shown in the following table. Each value is represented in decimal (base 10).</h3>
 
